@@ -1,0 +1,53 @@
+# basic
+# ============================================================================
+# if your site is serving on https://xxx.github.io, set `baseurl: /`
+# if your site is serving on https://xxx.github.io/path, set `baseurl: /path`
+baseurl: /
+
+# site title
+title: Md Rasel Hossain
+
+# site favicon, absolute path required
+favicon: /assets/img/favicon.png
+
+# home button image, absolute path requried
+avatar: /assets/img/avatar.jpg
+# specify meaningful description for your avatar
+avatarInfo: "Md Rasel Hossain"
+
+# default variables for post-type page
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comment: false
+
+
+# sass
+# ============================================================================
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# exclude none site related files
+# ============================================================================
+exclude:
+  - README.md
+  - LICENSE
+
+
+# google analytics
+# ============================================================================
+# turn it off -> ga: false
+ga: false
+
+
+# disqus
+# ============================================================================
+# turn it off for all posts -> disqus: false
+# turn it off for a particular post -> add `comment: false` to post front matter
+disqus: false

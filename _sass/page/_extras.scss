@@ -1,0 +1,68 @@
+/* dependency: mixins */
+
+/* subtitles page */
+.subtitles {
+  margin-top: 4.375rem;
+  margin-left: 2.50rem;
+}
+
+#step-aside {
+  margin-left: 1.0rem;
+}
+
+/* contact page */
+.contact {
+  margin-top: 4.375rem;
+  @include breakpoint(medium) {
+    margin-top: 8rem;
+  }
+}
+
+/* bookmarks page tables */
+#bookmarks-table,
+#favorites-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 3px;
+  margin-bottom: 18px;
+}
+
+#bookmarks-table th,
+#bookmarks-table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+#bookmarks-table th,
+#bookmarks-table td {
+  border: 0.5px dashed #ccc;
+  text-align: center;
+  padding: 5px;
+}
+
+/* favorites page tables */
+
+#favorites-table tr {
+  border-bottom: 0.5px solid #ccc;
+}
+
+#favorites-table td {
+  padding: 5px;
+}
+
+/* widths of table colomns */
+#thirty {
+  width: 30%;
+}
+
+#forty {
+  width: 40%;
+}
+
+#sixty {
+  width: 60%;
+}
+
+#seventy {
+  width: 70%;
+}
